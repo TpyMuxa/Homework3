@@ -40,5 +40,11 @@ public class Main {
         System.out.println("За 3 дня машина произвела " + bottleThreeDay + " штук бутылок");
         System.out.println("За 1 месяц машина произвела " + bottleMonth + " штук бутылок");
 
+        byte jarPaint = 120; // куплено 120 банок краски
+        byte oneClass = (byte) (jarPaint / (2 + 4)); // количество классов
+        byte whitePaint = (byte) (oneClass * 2); // колчество белой краски
+        byte brownPaint = (byte) (oneClass * 4); // количество коричневой краски
+        System.out.println("В школе, где " + oneClass + " классов, нужно " + whitePaint + " банок белой краски и " +
+                brownPaint + " банок коричневой краски");
     }
 }
