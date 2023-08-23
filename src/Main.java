@@ -46,5 +46,22 @@ public class Main {
         byte brownPaint = (byte) (oneClass * 4); // количество коричневой краски
         System.out.println("В школе, где " + oneClass + " классов, нужно " + whitePaint + " банок белой краски и " +
                 brownPaint + " банок коричневой краски");
+
+        byte bananas = 80;
+        byte milk = 105; // количество грамм в 100 миллилитров
+        byte iceCream = 100;
+        byte egg = 70;
+        byte SumBananas = 5;
+        byte milkSum = 200 / 100;
+        byte iceCreamSum = 2;
+        byte eggSum = 4;
+        short bananasWeight = (short) (bananas * SumBananas); // бананы в граммах для рецепта
+        short milkWeight = (short) (milk * milkSum); // молоко в граммах для рецепта
+        short iceCreamWeight = (short) (iceCream * iceCreamSum); // мороженое в граммах для рецепта
+        short eggWeight = (short) (egg * eggSum); // яйца в граммах для рецепта
+        short productWeight = (short) (bananasWeight + milkWeight + iceCreamWeight + eggWeight); //вес продуктов
+        float productInKg = (float) (productWeight / 1000.0); // вес продуктов в килограммах
+        System.out.println("Вес спортзавтрака равен " + productWeight + " грамм");
+        System.out.println("Вес спортзавтрака равен " + productInKg + " килограмм");
     }
 }
