@@ -14,5 +14,15 @@ public class Main {
         System.out.println("Значение переменной variableFloat с типом float равно " + variableFloat);
         System.out.println("Значение переменной variableDouble с типом double равно " + variableDouble);
 
+        float varFloat = 27.12F;
+        long varLong = 987678965549L;
+        double varDouble = 2.786;
+        short varShortFirst = 569;
+        short varShortSecond = -159;
+        int varInteger = 27897;
+        byte varByte = 67;
+
+
+
     }
 }
