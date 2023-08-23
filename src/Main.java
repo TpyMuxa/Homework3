@@ -26,8 +26,19 @@ public class Main {
         byte secondClass = 27; // во втором классе 27 учеников
         byte thirdClass = 30; // в третьем классе 30 учеников
         short paper = 480; // общее количество листов бумаги 480
-        int totalStudent = firstClass + secondClass + thirdClass; // количество учеников
-        int paperOneStudent = paper / totalStudent; // количество бумаги на одного ученика
+        short totalStudent = (short) (firstClass + secondClass + thirdClass); // количество учеников
+        short paperOneStudent = (short) (paper / totalStudent); // количество бумаги на одного ученика
         System.out.println("На каждого ученика рассчитано " + paperOneStudent + " листов бумаги");
+
+        byte bottleMinute = 16 / 2; // производительность за минуту времени
+        short bottleTwentyMinute = (short) (20 * bottleMinute); //производительность за 20 минут
+        short bottleDay = (short) ((24 * 60) * bottleMinute); //производительность в сутки
+        int bottleThreeDay = bottleDay * 3; //производительность за трое суток
+        int bottleMonth = bottleDay * 31; //производительность за месяц, в августе 31 день)))
+        System.out.println("За 20 минут машина произвела " + bottleTwentyMinute + " штук бутылок");
+        System.out.println("За сутки машина произвела " + bottleDay + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + bottleThreeDay + " штук бутылок");
+        System.out.println("За 1 месяц машина произвела " + bottleMonth + " штук бутылок");
+
     }
 }
