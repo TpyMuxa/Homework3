@@ -22,7 +22,12 @@ public class Main {
         int varInteger = 27897;
         byte varByte = 67;
 
-
-
+        byte firstClass = 23; // в первом классе 23 ученика
+        byte secondClass = 27; // во втором классе 27 учеников
+        byte thirdClass = 30; // в третьем классе 30 учеников
+        short paper = 480; // общее количество листов бумаги 480
+        int totalStudent = firstClass + secondClass + thirdClass; // количество учеников
+        int paperOneStudent = paper / totalStudent; // количество бумаги на одного ученика
+        System.out.println("На каждого ученика рассчитано " + paperOneStudent + " листов бумаги");
     }
 }
