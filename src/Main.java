@@ -61,7 +61,21 @@ public class Main {
         short eggWeight = (short) (egg * eggSum); // яйца в граммах для рецепта
         short productWeight = (short) (bananasWeight + milkWeight + iceCreamWeight + eggWeight); //вес продуктов
         float productInKg = (float) (productWeight / 1000.0); // вес продуктов в килограммах
-        System.out.println("Вес спортзавтрака равен " + productWeight + " грамм");
-        System.out.println("Вес спортзавтрака равен " + productInKg + " килограмм");
+        System.out.println("Рецепт спортзавтрака: \n" + bananasWeight + " грамм бананов \n" +
+                milkWeight + " грамм молока \n" + iceCreamWeight + " грамм мороженое-пломбир \n" + eggWeight +
+                " грамм сырых яиц \n" + "Вес продуктов: " + productWeight + " грамм \n" +
+                "Вес продуктов: " + productInKg + " кг");
+
+        short resetWeight = 7;
+        short slowWeight = 250;
+        short fastWeight = 500;
+        resetWeight = 7 * 1000; // сбросить вес в граммах
+        short slowDayWeight = (short) (resetWeight / slowWeight); // сбросит вес при 250 грамм в день
+        short fastDayWeight = (short) (resetWeight / fastWeight); // сбросит вес при 500 грамм в день
+        short averageDayWeight = (short) ((slowDayWeight + fastDayWeight) / 2); // среднее количество дней
+        System.out.println("Спортсмену необходимо сбросить " + resetWeight + " грамм веса \n" +
+                "Если спортсмен будет терять каждый день 250 грамм, потребуется " + slowDayWeight + " дней \n" +
+                "Если спортсмен будет терять каждый день 500 грамм, потребуется " + fastDayWeight + " дней \n" +
+                "Среднее количество дней для похудения: " + averageDayWeight);
     }
 }
