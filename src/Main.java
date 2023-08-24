@@ -77,5 +77,22 @@ public class Main {
                 "Если спортсмен будет терять каждый день 250 грамм, потребуется " + slowDayWeight + " дней \n" +
                 "Если спортсмен будет терять каждый день 500 грамм, потребуется " + fastDayWeight + " дней \n" +
                 "Среднее количество дней для похудения: " + averageDayWeight);
+
+        int firstEmployee = 67760; // Маша получает 67 760 рублей в месяц
+        int secondEmployee = 83690; // Денис получает 83 690 рублей в месяц
+        int thirdEmployee = 76230; // Кристина получает 76 230 рублей в месяц
+        float percent = (float) 10 / 100; // Проценты в десятичном значении
+        float firstUpEmployee = (float) (firstEmployee * percent) + firstEmployee; // Маша + 10 %
+        float secondUpEmployee = (float) (secondEmployee * percent) + secondEmployee; // Денис + 10 %
+        float thirdUpEmployee = (float) (thirdEmployee * percent) + thirdEmployee; // Кристина + 10 %
+        float firstYearEmployee = (firstUpEmployee - firstEmployee) * 12; // Годовая разница Маши
+        float secondYearEmployee = (secondUpEmployee - secondEmployee) * 12; // Годовая разница Дениса
+        float thirdYearEmployee = (thirdUpEmployee - thirdEmployee) * 12; // Годовая разница Кристины
+        System.out.println("Маша теперь получает " + firstUpEmployee + " рублей. Годовой доход вырос на " +
+                firstYearEmployee + " рублей");
+        System.out.println("Денис теперь получает " + secondUpEmployee + " рублей. Годовой доход вырос на " +
+                secondYearEmployee + " рублей");
+        System.out.println("Кристина теперь получает " + thirdUpEmployee + " рублей. Годовой доход вырос на " +
+                thirdYearEmployee + " рублей");
     }
 }
