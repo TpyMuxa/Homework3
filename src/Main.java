@@ -1,4 +1,5 @@
 public class Main {
+
     public static void main(String[] args) {
 
         byte variableByte = 50;
@@ -32,7 +33,7 @@ public class Main {
 
         byte bottleMinute = 16 / 2; // производительность за минуту времени
         short bottleTwentyMinute = (short) (20 * bottleMinute); //производительность за 20 минут
-        short bottleDay = (short) ((24 * 60) * bottleMinute); //производительность в сутки
+        short bottleDay = (short) (24 * 60 * bottleMinute); //производительность в сутки
         int bottleThreeDay = bottleDay * 3; //производительность за трое суток
         int bottleMonth = bottleDay * 31; //производительность за месяц, в августе 31 день)))
         System.out.println("За 20 минут машина произвела " + bottleTwentyMinute + " штук бутылок");
@@ -41,9 +42,11 @@ public class Main {
         System.out.println("За 1 месяц машина произвела " + bottleMonth + " штук бутылок");
 
         byte jarPaint = 120; // куплено 120 банок краски
-        byte oneClass = (byte) (jarPaint / (2 + 4)); // количество классов
-        byte whitePaint = (byte) (oneClass * 2); // колчество белой краски
-        byte brownPaint = (byte) (oneClass * 4); // количество коричневой краски
+        byte leaveWhitePaint = 2; // затраты белой краски
+        byte leaveBrownPaint = 4; // затраты коричневой краски
+        byte oneClass = (byte) (jarPaint / (leaveWhitePaint + leaveBrownPaint)); // количество классов
+        byte whitePaint = (byte) (oneClass * leaveWhitePaint); // колчество белой краски
+        byte brownPaint = (byte) (oneClass * leaveBrownPaint); // количество коричневой краски
         System.out.println("В школе, где " + oneClass + " классов, нужно " + whitePaint + " банок белой краски и " +
                 brownPaint + " банок коричневой краски");
 
@@ -51,11 +54,11 @@ public class Main {
         byte milk = 105; // количество грамм в 100 миллилитров
         byte iceCream = 100;
         byte egg = 70;
-        byte SumBananas = 5;
+        byte sumBananas = 5;
         byte milkSum = 200 / 100;
         byte iceCreamSum = 2;
         byte eggSum = 4;
-        short bananasWeight = (short) (bananas * SumBananas); // бананы в граммах для рецепта
+        short bananasWeight = (short) (bananas * sumBananas); // бананы в граммах для рецепта
         short milkWeight = (short) (milk * milkSum); // молоко в граммах для рецепта
         short iceCreamWeight = (short) (iceCream * iceCreamSum); // мороженое в граммах для рецепта
         short eggWeight = (short) (egg * eggSum); // яйца в граммах для рецепта
